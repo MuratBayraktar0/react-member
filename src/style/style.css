@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+.popup-background{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+}
+
+.popup-body {
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: auto;
+}
+
+.popup-content{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 10px;
+}
+
+.popup-title{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(31, 31, 228, 0.801);
+    color: white;
+    padding: 7px 20px;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: 300ms all;
+    cursor: pointer;
+    align-items: center;
+}
+
+.button:hover {
+    background-color: rgba(228, 61, 31, 0.808);
+    color: black;
+}
+
+.input-wrap{
+    width: 100%;
+}
+
+.input-border{
+    padding: 5px;
+    border-radius: 3px;
+    border: 2px solid rgba(31, 31, 228, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+.input{
+    padding: 5px;
+    border-radius: 3px;
+    border: 0;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.input-wrap:focus-within .input-border{
+    border: 2px solid rgba(31, 31, 228, 0.801);
+}
+
+.input-image {
+    margin-right:5px;
+    margin-left:5px
+}
+
+.login-p {
+    width:fit-content;
+    margin:auto; 
+    margin-top:30px;
+    color:grey;
+    font-size:12px
+}
+
+.login-b {
+    width:fit-content;
+    margin-left:auto; 
+    margin-bottom:30px; 
+    margin-top:0; 
+    color:grey; 
+    font-size:"12px";
+    cursor: pointer;
+}
+
+.login-connects {
+    display:grid; 
+    grid-template-Columns:1fr 1fr; 
+    column-gap:5px
+}
+
+.register-p {
+    width:fit-content;
+    margin:auto; 
+    margin-top:50px;
+    color:grey;
+    font-size:12px
+}
+
+.register-agreement{
+ font-size: 12px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 20px;
+}
+
+.register-goto-login {
+    width:fit-content;
+    margin:auto; 
+    margin-top:10px;
+    color:grey;
+    font-size:12px
+}
